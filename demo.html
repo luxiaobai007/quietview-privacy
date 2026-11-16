@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>海边读书计划 · 净览演示</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; color: #1b2834; background: #f6f8fa; font: 16px/1.65 system-ui, "Microsoft YaHei", sans-serif; }
+    .site-header { background: #142c39; color: #fff; }
+    .header-inner { max-width: 1040px; margin: 0 auto; padding: 15px 24px; display: flex; align-items: center; gap: 24px; justify-content: space-between; }
+    nav { display: flex; gap: 18px; }
+    nav a { color: #dbeae8; text-decoration: none; }
+    nav a:focus-visible, nav a:hover { text-decoration: underline; }
+    main { max-width: 940px; margin: 0 auto; padding: 36px 28px 72px; }
+    .paper { background: #fff; border: 1px solid #dce3e7; border-radius: 18px; padding: clamp(24px, 5vw, 50px); }
+    .cover { margin: 0 0 24px; padding: 22px 28px; border-radius: 12px; background: #dcefeb; }
+    .label { color: #245c55; font-weight: 700; margin: 0 0 6px; }
+    h1 { color: #142c39; font-size: clamp(30px, 5vw, 54px); line-height: 1.16; margin: 0 0 10px; }
+    .intro { color: #355b65; margin: 0; }
+    h2 { margin-top: 25px; font-size: 23px; line-height: 1.3; }
+    .reading-block { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; }
+    .reading-block > div { border: 1px solid #dce3e7; border-radius: 12px; padding: 12px 16px; }
+    .reading-block p { margin: 5px 0 0; }
+    footer { text-align: center; padding: 20px; color: #465b68; }
+    @media (max-width: 600px) { .header-inner { flex-wrap: wrap; } main { padding: 20px 12px 45px; } }
+  </style>
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <strong>沿岸笔记</strong>
+      <nav aria-label="站点导航"><a href="#plan">计划</a><a href="#reading">阅读</a><a href="#field-notes">随手记</a></nav>
+    </div>
+  </header>
+  <main>
+    <article class="paper">
+      <div class="cover">
+        <p class="label">周末阅读 · 第 01 期</p>
+        <h1>海边读书计划</h1>
+        <p class="intro">找一段安静的时间，读几页，再去沿岸走一走。</p>
+      </div>
+      <h2 id="plan">把一个下午留给阅读</h2>
+      <p>我们从潮汐表上选一个不赶时间的下午。带一本书、一壶水和一本薄笔记，沿步道走到能看见海面的位置。天气好时坐在岸边，风大就回到室内的窗边。</p>
+      <h2 id="reading">三段时间</h2>
+      <div class="reading-block">
+        <div><strong>20 分钟 · 读</strong><p>从上次停下的位置开始，标出一句想再看的话。</p></div>
+        <div><strong>10 分钟 · 走</strong><p>绕一段短路，看看风向、云层和岸线的变化。</p></div>
+        <div><strong>5 分钟 · 记</strong><p>写下一个细节，给下次阅读留个开头。</p></div>
+      </div>
+      <h2 id="field-notes">随手记</h2>
+      <p>同一片海在不同时间会有不同颜色。近岸的水先泛出灰绿，远处仍是蓝色，过一会儿两种颜色就不容易分开了。读到这样的细节，可以停一下，抬头看看窗外，再回到原来那一页。</p>
+      <p>下次带上同一本书，换一个地点。记下读到了哪一页，也记下那天闻到的气味、听到的声音和离开前最后看到的东西。</p>
+      <h2>留给下一次</h2>
+      <p>把书签留在想重读的地方。一次阅读不需要读完多少页，留下几个愿意再看的片段就够了。</p>
+    </article>
+  </main>
+  <footer>净览公开演示页 · 内容为演示样文</footer>
+</body>
+</html>

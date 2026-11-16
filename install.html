@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>安装与使用 · 净览</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f6f8fa; color: #1d2a35; font: 16px/1.75 system-ui, "Microsoft YaHei", sans-serif; }
+    main { max-width: 780px; margin: 0 auto; padding: 44px 24px 60px; }
+    h1 { font-size: clamp(34px, 7vw, 56px); line-height: 1.1; margin: 6px 0 14px; }
+    h2 { font-size: 24px; line-height: 1.4; margin: 31px 0 10px; }
+    p { margin: 8px 0 16px; }
+    .brand { color: #245c55; font-weight: 700; letter-spacing: .05em; }
+    .intro { background: #e2f0ed; padding: 20px 24px; border-radius: 14px; }
+    .links { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0; }
+    .links a { border: 1px solid #b9cecb; border-radius: 8px; padding: 6px 12px; background: #fff; }
+    a { color: #155650; text-underline-offset: .16em; overflow-wrap: anywhere; }
+    a:focus-visible { outline: 3px solid #245c55; outline-offset: 3px; }
+    ol, ul { padding-left: 1.65em; }
+    li { padding-left: 4px; margin: 7px 0; }
+    code, kbd { font-family: ui-monospace, Consolas, monospace; }
+    kbd { border: 1px solid #c9d5d9; border-radius: 4px; padding: 1px 5px; background: white; white-space: nowrap; }
+    hr { margin: 33px 0 12px; border: 0; border-top: 1px solid #d5e0e5; }
+    footer { color: #40525e; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="brand">净览 · 沉浸式浏览</div>
+      <h1>安装与使用</h1>
+      <p class="intro">净览适用于 Windows 桌面版 Chrome。扩展负责收起网页控件，另行安装的 Windows 助手负责无边框窗口和拖动。</p>
+    </header>
+    <section aria-labelledby="install">
+      <h2 id="install">安装</h2>
+      <ol>
+        <li>在你使用的浏览器商店安装净览。</li>
+        <li>打开普通网页并点击净览图标。在首次启用页面阅读本机数据处理说明，选择「同意本机处理并启用」。</li>
+        <li>选择「下载 Windows 助手」，将 ZIP 完整解压到一个固定文件夹，然后双击 <code>Install-QuietView.cmd</code>。脚本为当前 Windows 用户登记助手，无需管理员权限。</li>
+        <li>保留助手文件夹。回到原网页，点击净览图标或按 <kbd>Alt + Shift + F</kbd> 开始阅读。</li>
+      </ol>
+      <div class="links"><a href="https://chromewebstore.google.com/detail/lpblofjppkiiikopojiopbbngomipoaa">Chrome 应用商店</a><a href="https://luxiaobai007.github.io/quietview-privacy/downloads/QuietView-Windows-Assistant-2.2.1.zip">下载 Windows 助手</a></div>
+    <p>当前助手版本 2.2.1，仅绑定 Chrome 商店中的净览。安装包包含助手源码；程序目前未做代码签名。</p>
+      <p>下载校验：<a href="downloads/QuietView-Windows-Assistant-2.2.1.sha256.txt">SHA-256 校验值</a>。若安装被设备策略拦截，请联系发布者确认，不要关闭安全防护。</p>
+    </section>
+    <section aria-labelledby="use">
+      <h2 id="use">阅读、移动和退出</h2>
+      <ul>
+        <li>用净览图标或 <kbd>Alt + Shift + F</kbd> 切换阅读模式。进入时沿用原窗口的可见大小和位置。</li>
+        <li>按住阅读窗口顶部的实色细条拖动。拖动时窗口大小保持原样。</li>
+        <li>网页获得焦点后，按 <kbd>Esc</kbd> 返回普通窗口。原来未最大化的窗口留在拖动后的位置。原来最大化的窗口恢复最大化。</li>
+        <li>按 <kbd>Alt + Shift + H</kbd> 后点击网页元素，可暂时隐藏它。退出后元素恢复。点选仍在等待时，第一次 <kbd>Esc</kbd> 会取消点选。</li>
+      </ul>
+      <p>可以打开公开演示页试用。 <a href="https://luxiaobai007.github.io/quietview-privacy/demo.html">净览演示</a></p>
+    </section>
+    <section aria-labelledby="help">
+      <h2 id="help">打不开阅读窗口</h2>
+      <p>如果净览打开了「安装 Windows 助手」页面，请用页面上的「下载 Windows 助手」获取当前版本，完整解压并重新运行安装脚本，然后回到原网页重试。</p>
+      <p>浏览器设置页、扩展商店等受保护页面，以及分屏标签页、分组里唯一的标签页无法切换。不同显示缩放比例的屏幕之间不能拖动同一个阅读窗口。可隐藏的网页控件取决于页面结构。</p>
+      <p>若切换快捷键已被占用，可以在 <code>chrome://extensions/shortcuts</code> 或 <code>edge://extensions/shortcuts</code> 调整。若键盘焦点在嵌入的网页内，点击正文让主页面获得焦点，或使用切换快捷键退出。</p>
+    </section>
+    <section aria-labelledby="uninstall">
+      <h2 id="uninstall">停用和卸载</h2>
+      <p>在浏览器扩展管理页打开净览的扩展选项，选择「撤回同意」，即可退出正在运行的阅读模式并停止后续处理。</p>
+      <p>先按 <kbd>Esc</kbd> 退出阅读模式，在浏览器的扩展管理页移除净览。双击助手文件夹里的 <code>Uninstall-QuietView.cmd</code>，撤销助手登记，再删除解压后的文件夹。</p>
+    </section>
+    <hr>
+    <footer>
+      <p><a href="https://luxiaobai007.github.io/quietview-privacy/">Chrome 版隐私政策</a></p>
+      <p>帮助与反馈 <a href="mailto:luchencoder@gmail.com">luchencoder@gmail.com</a></p>
+    </footer>
+  </main>
+</body>
+</html>
