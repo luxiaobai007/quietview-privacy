@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for the QuietView browser extension and Windows companion. Publisher: LuChen.">
+  <meta name="referrer" content="no-referrer">
+  <title>Privacy Policy | QuietView</title>
+  <link rel="alternate" hreflang="zh-CN" href="index.html">
+  <style>
+* { box-sizing: border-box; }
+html { color-scheme: light; scroll-behavior: smooth; }
+body { margin: 0; background: #f4f7f6; color: #20332f; font: 16px/1.85 system-ui, -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif; }
+main { max-width: 860px; margin: 40px auto; padding: 44px 56px; background: #fff; border: 1px solid #dde7e3; border-radius: 18px; }
+header { border-bottom: 1px solid #dde7e3; padding-bottom: 22px; }
+.brand { margin: 0; color: #176957; font-size: 15px; font-weight: 700; letter-spacing: .04em; }
+h1 { margin: 12px 0 14px; font-size: clamp(30px, 6vw, 42px); line-height: 1.3; letter-spacing: -.02em; }
+h2 { margin: 32px 0 10px; font-size: 21px; line-height: 1.5; }
+p { margin: 10px 0 16px; }
+.meta { color: #536961; font-size: 14px; }
+.summary { padding: 18px 22px; background: #edf7f3; border-left: 4px solid #27866f; border-radius: 0 10px 10px 0; }
+a { color: #146652; text-underline-offset: .18em; overflow-wrap: anywhere; }
+a:focus-visible { outline: 3px solid #27866f; outline-offset: 3px; }
+ul { padding-left: 1.5em; }
+li { margin: 9px 0; }
+code { font-size: .92em; overflow-wrap: anywhere; }
+footer { margin-top: 34px; padding-top: 20px; border-top: 1px solid #dde7e3; font-size: 14px; color: #536961; }
+@media(max-width: 640px) { main { margin: 0; padding: 28px 22px 40px; border: 0; border-radius: 0; } }
+@media print { body { background: white; } main { max-width: none; margin: 0; padding: 0; border: 0; } h2 { break-after: avoid; } a { color: inherit; } }
+</style>
+</head>
+<body><main>
+<header>
+  <p class="brand">QuietView · Browser extension and Windows companion</p>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Publisher: LuChen<br>Effective and last updated: November 16, 2026<br>Contact: <a href="mailto:luchencoder@gmail.com">luchencoder@gmail.com</a></p>
+  <p><a href="index.html" lang="zh-CN" hreflang="zh-CN">阅读中文版本</a></p>
+  <p class="summary">QuietView processes the page and window information needed for immersive reading on your device. It does not upload this reading data to LuChen or third parties. Information involved in visiting websites, downloading files or contacting support is described separately below.</p>
+</header>
+<section aria-labelledby="scope">
+  <h2 id="scope">1. Scope and purpose</h2>
+  <p>This policy covers the QuietView browser extension for Google Chrome and Microsoft Edge on Windows, and its Windows companion. It describes the local reading features in the 2.2 release series. After you give consent and activate the feature, QuietView temporarily hides unnecessary page controls and browser borders, preserves the visible window size and position, allows dragging, and restores the window when you exit.</p>
+  <p>Before enabling reading features for the first time, QuietView displays a local processing disclosure and asks for your explicit consent. No user account is required.</p>
+</section>
+<section aria-labelledby="data">
+  <h2 id="data">2. Information processed locally</h2>
+  <ul>
+    <li><strong>The current page:</strong> The current tab URL (primarily its scheme, domain and path), page structure, element roles and control identifiers, relevant attributes and layout coordinates. These are used to check compatibility and temporarily hide navigation, toolbars and floating controls. The original page title is held in memory, briefly replaced with a random marker to locate the window, and then restored. QuietView does not capture page screenshots or record form input values or your complete browsing history.</li>
+    <li><strong>Session and restoration state:</strong> Tab, document and window identifiers; tab order, pinned and group state, relevant split-view and private-window flags; and the original window type, normal or maximized state, position and size. These support compatibility checks and restoration.</li>
+    <li><strong>Feature interactions:</strong> Exit and element-picker shortcut events while reading is active, and pointer, click and element-position events while the picker is open. These support your selection of elements to hide. QuietView does not save these interactions as behavioral records or keystroke logs.</li>
+    <li><strong>Windows information:</strong> The companion enumerates visible, non-minimized candidate windows and reads their classes and candidate titles to match the temporary random marker. It checks the matching window's process identifier and executable path to confirm a supported browser. Window position and size, and monitor and scale information are used for cropping. While you drag the top strip, cursor position and left-button state are used to move the window. Matching and dragging data stays in local process memory; no window-title or drag-trajectory log is created.</li>
+  </ul>
+</section>
+<section aria-labelledby="permissions">
+  <h2 id="permissions">3. Why permissions are needed</h2>
+  <ul>
+    <li><code>activeTab</code>: Temporary access to the current tab after you activate the feature.</li>
+    <li><code>scripting</code>: Run packaged scripts and styles in the current page to identify, temporarily hide and restore interface elements.</li>
+    <li><code>storage</code>: Keep consent locally and temporary restoration state in browser session storage. Cloud sync storage is not used.</li>
+    <li><code>nativeMessaging</code>: Communicate with the separately installed Windows companion to provide borderless windows and dragging.</li>
+  </ul>
+</section>
+<section aria-labelledby="sharing">
+  <h2 id="sharing">4. Local communication, uploads and sharing</h2>
+  <p>The extension sends operation types, request numbers, random window markers, viewport dimensions and scale parameters to the companion on the same device. The companion returns status, protocol version, movement results or error codes. Page body content, original page titles and URLs are not sent through this channel. As described in section 2, the companion separately reads candidate window titles from Windows to match the random marker.</p>
+  <p>The reading feature does not connect to publisher servers or include analytics, advertising or tracking SDKs. It does not upload reading data to external services. LuChen does not sell this data, provide it to data brokers, or use it for advertising, profiling, credit decisions or purposes unrelated to immersive reading.</p>
+  <p>QuietView complies with the <a href="https://developer.chrome.com/docs/webstore/program-policies/user-data-faq" rel="noreferrer noopener">Chrome Web Store User Data Policy</a>, including its <a href="https://developer.chrome.com/docs/webstore/program-policies/limited-use" rel="noreferrer noopener">Limited Use requirements</a>. Information obtained through browser extension APIs is used only for the immersive reading features disclosed in this policy.</p>
+</section>
+<section aria-labelledby="retention">
+  <h2 id="retention">5. Retention and deletion</h2>
+  <ul>
+    <li><strong>Temporary reading data:</strong> Page titles, element selections and companion window state are primarily held in the relevant processes' memory. Restoration records are held in browser session storage and normally removed after exit completes or the associated tab closes. A restoration error may leave temporary records until the browser session ends.</li>
+    <li><strong>Consent setting:</strong> Stored in the extension's local storage to check consent on later use. Withdrawing consent removes that setting and initiates exit from active reading sessions. Consent is required again before re-enabling. Removing the extension also clears its browser storage.</li>
+    <li><strong>Companion installation:</strong> Extracted program and configuration files, the generated native-messaging manifest, and current-user Windows registry entries containing its installation path remain until uninstalled or manually deleted. Run <code>Uninstall-QuietView.cmd</code> to remove this installation directory's registration and generated manifest, then delete the extracted folder. Removing the extension does not uninstall the companion.</li>
+    <li><strong>Errors:</strong> The extension or companion may output exception types and short error messages to the browser console or local standard-error channel. QuietView does not automatically upload them or create persistent diagnostic log files.</li>
+  </ul>
+</section>
+<section aria-labelledby="websites">
+  <h2 id="websites">6. Websites, downloads and support</h2>
+  <p>When you choose to open a privacy, installation, download or browser-store page, that website receives an ordinary web request. QuietView does not add the current reading page's URL, title or body to those links. Website and download providers handle their own access logs.</p>
+  <p>This policy page loads no analytics scripts, advertising, external fonts or tracking components. When you visit it on GitHub Pages, GitHub records visitors' IP addresses for security purposes. See the <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection" rel="noreferrer noopener">GitHub Pages data collection notice</a> and <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noreferrer noopener">GitHub Privacy Statement</a>. This is separate from the extension's local reading features.</p>
+  <p>If you email the Gmail address below, LuChen receives and uses your email address, message and any files you choose to attach to respond to and resolve your support request. Google, as the email provider, also processes email-service data under its <a href="https://policies.google.com/privacy" rel="noreferrer noopener">Privacy Policy</a>. Share only what is needed to explain the problem, and avoid sending passwords or unrelated sensitive information. Support messages are retained only as needed to handle and follow up on requests and meet necessary security or legal obligations. You can contact LuChen to request access to, correction of or deletion of information you voluntarily provided.</p>
+</section>
+<section aria-labelledby="control">
+  <h2 id="control">7. Your choices and safeguards</h2>
+  <p>Press Esc to leave reading mode. When the element picker is awaiting a selection, the first press cancels the picker and a second press exits. You may withdraw consent in the extension options, disable or remove the extension, and uninstall the companion as described in section 5. LuChen has no remotely stored reading-session records to retrieve; you control local information through your browser and device.</p>
+  <p>QuietView uses on-demand current-tab access and local storage. The Windows companion restricts native-messaging callers to store extension identifiers in its configuration. The operating system and browser provide local access controls, and the public policy page is served over HTTPS. Install the extension and companion only from browser stores and publisher download channels you trust.</p>
+</section>
+<section aria-labelledby="updates">
+  <h2 id="updates">8. Updates and contact</h2>
+  <p>Changes to this policy will be posted here with an updated date. If future features change data handling, an explanation will be provided before those features are enabled, and renewed consent will be requested when needed.</p>
+  <p>Publisher: LuChen<br>Privacy and support contact: <a href="mailto:luchencoder@gmail.com">luchencoder@gmail.com</a></p>
+</section>
+<footer>QuietView · Google Chrome, Microsoft Edge and the Windows companion</footer>
+</main></body>
+</html>

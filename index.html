@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="净览浏览器扩展及 Windows 本地助手的隐私政策。发布者 LuChen。">
+  <meta name="referrer" content="no-referrer">
+  <title>隐私权政策 | 净览 QuietView</title>
+  <link rel="alternate" hreflang="en" href="privacy-en.html">
+  <style>
+* { box-sizing: border-box; }
+html { color-scheme: light; scroll-behavior: smooth; }
+body { margin: 0; background: #f4f7f6; color: #20332f; font: 16px/1.85 system-ui, -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif; }
+main { max-width: 860px; margin: 40px auto; padding: 44px 56px; background: #fff; border: 1px solid #dde7e3; border-radius: 18px; }
+header { border-bottom: 1px solid #dde7e3; padding-bottom: 22px; }
+.brand { margin: 0; color: #176957; font-size: 15px; font-weight: 700; letter-spacing: .04em; }
+h1 { margin: 12px 0 14px; font-size: clamp(30px, 6vw, 42px); line-height: 1.3; letter-spacing: -.02em; }
+h2 { margin: 32px 0 10px; font-size: 21px; line-height: 1.5; }
+p { margin: 10px 0 16px; }
+.meta { color: #536961; font-size: 14px; }
+.summary { padding: 18px 22px; background: #edf7f3; border-left: 4px solid #27866f; border-radius: 0 10px 10px 0; }
+a { color: #146652; text-underline-offset: .18em; overflow-wrap: anywhere; }
+a:focus-visible { outline: 3px solid #27866f; outline-offset: 3px; }
+ul { padding-left: 1.5em; }
+li { margin: 9px 0; }
+code { font-size: .92em; overflow-wrap: anywhere; }
+footer { margin-top: 34px; padding-top: 20px; border-top: 1px solid #dde7e3; font-size: 14px; color: #536961; }
+@media(max-width: 640px) { main { margin: 0; padding: 28px 22px 40px; border: 0; border-radius: 0; } }
+@media print { body { background: white; } main { max-width: none; margin: 0; padding: 0; border: 0; } h2 { break-after: avoid; } a { color: inherit; } }
+</style>
+</head>
+<body><main>
+<header>
+  <p class="brand">净览 QuietView · Windows 浏览器扩展与本地助手</p>
+  <h1>隐私权政策</h1>
+  <p class="meta">发布者：LuChen<br>生效及最后更新日期：2026 年 11 月 16 日<br>联系邮箱：<a href="mailto:luchencoder@gmail.com">luchencoder@gmail.com</a></p>
+  <p><a href="privacy-en.html" lang="en" hreflang="en">Read in English</a></p>
+  <p class="summary">净览的沉浸阅读功能在你的设备上处理所需的网页和窗口信息，不把这些阅读数据上传给 LuChen 或第三方。访问隐私网页、下载页面或主动发送支持邮件所涉及的信息，另见下文。</p>
+</header>
+<section aria-labelledby="scope">
+  <h2 id="scope">1. 适用范围和用途</h2>
+  <p>本政策适用于「净览 · 沉浸式浏览」（QuietView）在 Windows 桌面版 Google Chrome 和 Microsoft Edge 上的浏览器扩展及其 Windows 本地助手，说明 2.2 系列沉浸阅读功能的数据处理方式。净览的用途是：经你同意并主动启用后，暂时收起非必要的网页界面及浏览器边框，保持窗口的可见大小和位置，支持拖动及退出后恢复。</p>
+  <p>首次使用时，净览会先展示本机处理说明，取得你的明确同意后才启用阅读功能。净览不要求注册账号。</p>
+</section>
+<section aria-labelledby="data">
+  <h2 id="data">2. 阅读功能在本机处理哪些信息</h2>
+  <ul>
+    <li><strong>当前网页信息：</strong>当前标签页网址（主要使用其协议、域名和路径），以及网页结构、元素的角色和控件标记、相关属性与布局位置，用于判断页面是否受支持，并暂时隐藏导航、工具栏和悬浮控件。净览也在内存中暂存网页原标题，短暂改成随机窗口标记以定位窗口，随后恢复原标题。净览不生成网页截图，也不记录表单输入内容或完整浏览历史。</li>
+    <li><strong>会话和恢复信息：</strong>标签页、文档及窗口标识，标签页顺序、固定和分组状态、相关分屏与隐私窗口标记，原窗口类型、普通或最大化状态、位置和尺寸，用于处理兼容性及恢复原标签页和窗口。</li>
+    <li><strong>功能操作：</strong>阅读期间处理退出和点选工具的快捷键事件；点选工具开启时处理鼠标指向、点击及所选元素的位置，以选择要隐藏的元素。净览不将这些操作保存为行为记录或键盘输入日志。</li>
+    <li><strong>Windows 窗口信息：</strong>助手在本机枚举可见且未最小化的候选窗口，读取窗口类名和候选标题以匹配临时随机标记，并核对匹配窗口的进程标识及程序路径，确认目标为受支持的浏览器。助手使用窗口的位置和尺寸，以及显示器和缩放信息完成裁切；你拖动顶部细条时，读取鼠标位置和左键状态以移动窗口。这些匹配和拖动数据在本机内存中使用，不建立窗口标题或拖动轨迹日志。</li>
+  </ul>
+</section>
+<section aria-labelledby="permissions">
+  <h2 id="permissions">3. 扩展权限的用途</h2>
+  <ul>
+    <li><code>activeTab</code>：在你主动触发时，临时访问当前标签页以运行阅读功能。</li>
+    <li><code>scripting</code>：在当前页面执行随扩展提供的脚本和样式，识别并暂时隐藏界面元素，退出时恢复。</li>
+    <li><code>storage</code>：在本机保存同意设置，以及本次浏览器会话内的临时恢复信息；不使用云端同步存储。</li>
+    <li><code>nativeMessaging</code>：通过浏览器的本地消息通道调用另行安装的 Windows 助手，实现无边框窗口和拖动。</li>
+  </ul>
+</section>
+<section aria-labelledby="sharing">
+  <h2 id="sharing">4. 本地通信、上传和共享</h2>
+  <p>扩展向同一设备上的 Windows 助手发送操作类型、请求编号、随机窗口标记、视口尺寸和缩放参数。助手返回处理状态、协议版本、移动结果或错误代码。网页正文、原始网页标题和网址不通过该通道发送给助手；助手仍会按第 2 节所述，直接从 Windows 读取候选窗口标题以匹配随机标记。</p>
+  <p>阅读功能不连接发布者服务器，不包含分析统计、广告或追踪 SDK，也不会向外部服务上传这些阅读数据。LuChen 不出售这些数据，不将其提供给数据经纪商，也不用于广告、用户画像、信用评估或与沉浸阅读无关的目的。</p>
+  <p>净览遵守 Chrome Web Store 的<a href="https://developer.chrome.com/docs/webstore/program-policies/user-data-faq" rel="noreferrer noopener">用户数据政策</a>，包括 <a href="https://developer.chrome.com/docs/webstore/program-policies/limited-use" rel="noreferrer noopener" lang="en">Limited Use</a> 要求。通过浏览器扩展 API 获取的信息仅用于本政策披露的沉浸阅读功能。</p>
+</section>
+<section aria-labelledby="retention">
+  <h2 id="retention">5. 信息保留和删除</h2>
+  <ul>
+    <li><strong>临时阅读信息：</strong>页面标题、元素选择及助手窗口状态主要保存在相关进程内存中。恢复记录保存在浏览器会话存储中，通常在退出完成或相关标签页关闭后移除；发生恢复异常时，临时记录可能保留至浏览器会话结束。</li>
+    <li><strong>同意设置：</strong>保存在扩展的本机存储中，供下次启动时判断是否已获同意。撤回同意会删除该设置，并触发活动阅读模式的退出；再次启用时需要重新同意。移除扩展也会清除其浏览器存储。</li>
+    <li><strong>助手安装信息：</strong>解压后的程序和配置、生成的本地消息清单，以及包含其安装路径的当前 Windows 用户级注册表登记，会保留到卸载或你手动删除。运行 <code>Uninstall-QuietView.cmd</code> 可移除属于该安装目录的登记及生成的清单，然后可删除解压文件夹。卸载扩展不会自动卸载助手。</li>
+    <li><strong>故障信息：</strong>出现错误时，扩展或助手可能向浏览器控制台或本机标准错误通道输出异常类型、简要错误信息。净览不主动上传这些信息，也不建立持续的诊断日志文件。</li>
+  </ul>
+</section>
+<section aria-labelledby="websites">
+  <h2 id="websites">6. 隐私网页、下载和主动联系</h2>
+  <p>你主动打开隐私政策、安装说明、助手下载或商店页面时，相应网站会接收普通网络访问请求。净览不会在这些链接中附带当前阅读页的网址、标题或正文。网站和下载服务对访问日志的处理由其实际服务提供商负责。</p>
+  <p>本政策网页不加载分析脚本、广告、外部字体或追踪组件。如果你通过 GitHub Pages 访问本页，GitHub 会为安全目的记录访问者的 IP 地址，详情见 <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection" rel="noreferrer noopener">GitHub Pages 数据收集说明</a>和 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noreferrer noopener">GitHub 隐私声明</a>。这与扩展阅读功能的本机处理不同。</p>
+  <p>若你主动向下方 Gmail 邮箱发送邮件，LuChen 会接收并使用你的邮箱地址、邮件内容及你主动附上的文件，以回复和处理该次支持请求。邮件服务商 Google 也会按其<a href="https://policies.google.com/privacy" rel="noreferrer noopener">隐私政策</a>处理邮件服务数据。请仅提供排查问题所需的信息，避免发送密码或无关的敏感资料。支持邮件仅为处理、跟进请求及必要的安全或法定义务保留；你可以联系 LuChen 申请查阅、更正或删除你主动提供的信息。</p>
+</section>
+<section aria-labelledby="control">
+  <h2 id="control">7. 你的选择和安全措施</h2>
+  <p>你可以按 Esc 退出阅读模式；点选工具正在等待选择时，第一次 Esc 先取消点选，再按一次退出。你也可以在扩展选项中撤回同意、停用或移除扩展，并按第 5 节卸载助手。LuChen 没有远程保存的阅读会话记录可供调取；相关本机信息由你通过浏览器和设备管理。</p>
+  <p>净览使用按需的当前标签页访问和本机存储。Windows 助手使用配置中允许的商店扩展标识限制本地消息调用来源。设备操作系统和浏览器提供本机访问控制；隐私网页通过 HTTPS 发布。请从你信任的商店及发布者下载渠道安装扩展和助手。</p>
+</section>
+<section aria-labelledby="updates">
+  <h2 id="updates">8. 更新和联系</h2>
+  <p>本政策发生变更时，会在本页更新日期和内容。若未来的功能改变数据处理方式，将在相应功能启用前提供说明，并在需要时重新征求你的同意。</p>
+  <p>发布者：LuChen<br>隐私和支持联系：<a href="mailto:luchencoder@gmail.com">luchencoder@gmail.com</a></p>
+</section>
+<footer>净览 QuietView · 适用于 Google Chrome、Microsoft Edge 及 Windows 本地助手</footer>
+</main></body>
+</html>
